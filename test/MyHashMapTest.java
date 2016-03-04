@@ -28,7 +28,7 @@ public class MyHashMapTest {
     @Test
     public void test_AddElement_may_overwrite_the_value_of_same_hashIndex() throws Exception {
         MyHashMap<Integer, String> hashMap = new MyHashMap<>(15);
-        int hashIndex = hashMap.add(5,"Nimesh");
+        hashMap.add(5,"Nimesh");
         hashMap.add(5, "Arun");
 
         assertEquals("Arun",hashMap.getElementOf(5));
